@@ -1,0 +1,5 @@
+Aula 1:
+shadow:		primeiro pix é Horizontal (lateral)
+		segundo pix é vertical (cima/baixo)
+		terceiro pix espalhamento 
+		e finaliza com a cor

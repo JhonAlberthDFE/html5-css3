@@ -1,0 +1,243 @@
+Anotações gerais modulo 2
+
+Capitulo 13
+
+tipos de forma para representar cores
+
+Representação por nome: 
+ex: red , gree e blue(nome das cores em ingles)
+
+Representação por codigos hexadecimais: 
+ex: style="background-color: #0000ff(azul); color: #ffffff(branco);"
+cada dois digitos representam a quantidade de uma cor do RGB( red, green e blue) em hexadecimal.
+
+Representação por codigo rgb:
+ex: style="background-color: rgb(0, 0, 255=azul); color: rgb(255, 255, 255=branco);
+
+Representação atraves de caracteristicas de cores HSL 
+que é igual Hue (tom), Saturation (saturação) e Lightness (luminosidade)
+ex: style="background-color: hsl(240, 100%, 50%=azul); color: hsl(0, 0, 100=branco);"
+
+Voce pode tamber escrever o nome de uma cor proxima a que vc quer, ai passo mouse em cima do nome da cor
+vai abrir uma tela q vc vai poder mover livremente, e pode moder a visualização da cor tbm, clicando na barra
+de cima onde esta escrito RGB.
+
+Site para pegar paleta de cores, color.adobe ou paletton.com(esse é o brabo) e tem tbm o coolors
+
+dentro do css inline ou tag style o asterisco * significa configuração global
+tag para colocar gradente em css é background-image: linear-gradient(to right, white,blue) para ir para a direita
+para escolher o lado colocar em ingles to right(direita), to left(esquerda), to top(para cima) e to bottom(para baixo)
+EX:
+background-image: linear-gradient(to bottom, #3989DC,#753BB6, #A63792,#BD3E7A,#D3545F,
+#ED7439,#F9A440, #FDC55E );
+background-attachment: fixed;
+
+Tipografia o estudo de como escrever coisas no papel
+geometria da tipografia
+haste = barra em linha para criar letra
+Filete = une duas ou mais hastes
+arco = linha boleada para ligar hastes
+esporão = parece um salto na letra 
+vertice = parece um V na ponta da letra
+terminal = parece um arco mas esta ligado a uma só haste ou coisa
+braço = sai da haste e vai pra cima
+perna = sai do braço ou da haste e vai pra baixo
+pé = localizado no final da perna
+espinha = curvas encontradas na letra S
+barriga = encontro de 2 arcos saidos de uma haste
+olho = area fechada por todos os lados na letra
+orelha =  parte saltada na parte ce cima da letra como exemplificado na letra g.
+
+algumas fontes tem varias formas de representar o mesmo glifo, são chamados de familias tipograficas
+por exemplo, no caso da fonte open source que vai ter light/normal/seminegrito/negrito/extrenegrito.
+
+Categorias de fonte. temos serifadas, sons-serrif(sem serrifa), monoespaçada(pode ser com ou sem serrifa e tem 
+espaço similar em tudo), handwriting(escripitada, tenta simular a caligrafia humana) e Diplay( são fontes
+comemorativas que não se preocupam em obedecer as regras anatomicas).
+
+OBS: a recomendação em texto muito longos em sites de preferencia para fontes não serifadas.
+site para encontrar as combinações seguras de fonte para web pesquisar por css web safe fonts, site w3schools
+exemplos de cada um com a combinação segura
+serrifadas: font-family: 'Times New Roman', Times, serif;
+sons-serrif: font-family: Arial, Helvetica, sans-serif;
+monoespaçada: font-family: 'Courier New', Courier, monospace;
+handwriting: font-family: Cursive;
+
+tamanho de fontes e suas medidas, temos:
+Medidas absolutas:
+cm, mm, in(polegada), px(pixels), pt(ponto), pc(paica)
+Medidas relativas:
+em(relativa ao tamanho atual da fonte), ex(relativo a altura x da fonte), rem(relativo a fonte q ta no body), 
+vw(relativo ao tamanho da tela), vh(relativo a altura da tela) e %
+OBS: As recomendações da w3c são de usar o px, e o em. 16 px geralmente é igual a 1em.
+
+Peso da fonte é igual a font-weight: 
+Existem alguns pesos literais aceitos pelas fontes= lighter, normal, bold, bolder.(vc pode colocar de 100 a 900 tbm)
+shorthand é tipo um compactação do codigo, 
+ex= font: italic bolder 3em "times new roman", serif;
+a ordem tem q sempre ser essa, font-style, font weight(peso), font size(tamanho) e font family
+
+Para importar fontes, SITE MT BOM é o google fontes
+é só clicar na fonte desejada/select this style/abrir o quadrado/import/copiar tudo que tem dentro da tag style.
+
+Para usar fontes externas baixadas a tag é. @font-face para configurar, depois de ja ter baixado na pasta claro.
+ex: 
+@font-face {
+            font-family: "Oldlondon";(detalhe que o nome q vc colocar tem q ta em aspas)
+            src: url(Olondon_.otf)format("opentype"), url(OldLondon.ttf) format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+tipos de format:
+-opentype (otf)
+- Truetype (ttf)
+- Embedded-opentype
+- Truetype-aat(apple advanced typography)
+- Svg
+(geralmente otf e ttf funciona em todos os navegadores)
+
+comando para alinhamento e o text-align
+Observação legal, colocar dentro do style 
+p{
+            text-align: justify; (para o testo ficar justificado)
+            text-indent: 20px;(para o paragrafo começar com um espaço a esquerda como deve ser)
+        }
+para criar uma identidade para cada tag, basta dentro da tag adicionar o id="principal" ex:
+<h1 id="principal">
+
+OBS IMPORTANTE: para editar o msm no css se usa o h1#principal ou colocar só #principal e vai pegar tudo que tiver classificado como 
+principal
+em HTML é id, em CSS é #
+em HTML é class em CSS é .
+
+Importante saber que id só pode ter um e class pode ter varios inclusive no msm tag.
+height=altura
+width=largura
+hover= passar o mouse por cima
+
+vc pode tbm criar um "filho" da div, por exemplo colocar um paragafo dentro da div e no style mecher nele
+exemplo.
+<div>Passe o mouse aqui
+    <p>TEXTO ESCONDIDO...</p>
+</div>
+para esconder algo e so aparecer qnd o mouse passa em cima tem q usar display none para sumir ex:
+div > p {
+            display: none;
+        }div > p {
+            display: none;
+        }
+e display block pra aparecer de volta ex: 
+div:hover >p{
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+
+OBS IMPORTANTE nas CSS:
+# 	= id
+. 	= class
+:	= pseudo-class
+::	= pseudo-element
+>	= Children
+
+Estruturas de box(caixa)
+height 	= altura
+width 	= largura
+border	= borda(linha que circula seu conteudo)
+padding	= Preenchimento(aumenta o espaço da borda para o conteudo)
+margin	= margem(espaço do lado de fora da borda)
+outline	= traço(uma linha que fica em volta da linha da borda)
+
+box-level	= sempre se inicia numa linha nova e sempre ocupa a largura 100% da tela
+ex: <div>, <h1>, <main>, <header>, <p>, <nav>, <article>, <aside>, <footer>, <form> e <video>
+
+inline-level = começa na mesma linha e não quebra a linha.
+ex: <span>, <a>, <code>, <small>, <strong>, <em>, <sup>-<sub>, <label>, <buttonn>, <input> e <select>
+
+para a borda sempre deve ser configurada na msm ordem ex: 
+border-width: 10px;
+border-style: solid;
+border-color: red;
+e pode ser simplificado contato que siga a mesma ordem(OBS TAMBEM SERVE PARA OUTLINE)
+border: 10px solid red;(lembrar que é sem virgulas e tbm serve para o outline)
+
+algumas confingurações de estilo de borda:
+border-style: solid;(linha comum)
+border-style: dashed;(pontilhado em cima e embaixo)
+border-style: doted;(mais pontilhado)
+border-style: double;(linha dupla)
+border-style: groove;(meio 3d)
+
+configurando padding/margin(aumenta o espaço da borda para o conteudo/aumenta o tamanho da margem):
+padding-top: 10px;
+padding-right: 10px;
+padding-bottom: 10px;
+padding-left: 10px;
+pode ser simplifaco apenas com padding e colocar os tamanhos sempre no sentido horario
+cima,direita,baixo e esquerdar
+ex: padding: 10px 10px 10px 10px;
+se todas foram iguais basta informar 1 vez.
+
+para configurar a margem, é o mesmo esquema do padding
+OBS: para centralizar utilizase auto ex: 
+margin: 20px auto 40px auto;(centralizei a esquerda e direita)
+
+para transformar em borda inline é só usar :
+display: block;
+e para transformar box level em inline
+display: inline;
+
+agroupamento de tags
+header 	= cabeçalho pode ser o principal ou até mesmo o de uma seção ou artigo.
+nav	= Define uma area para links de navegação
+main	= conteudo principal, normalmente concentra as seções e artigos perifericos.
+section	= Cria seções para sua pagina, pode conter conteudo direamente no seu corpo ou dividir em artigos.
+article	= Um artigo é um elemento que vai conter um conteudo que pode ser lido independente e dizem respeito
+a um mesmo assunto.
+aside	= Delimita um conteudo periferico e complementar ao conteudo principal de um artigo ou seção
+footer	= rodapé, geralmente possui informações sobre autoria do conteudo, links adicionais, mapa do site e
+documentos relacionados.
+
+para colocar sombra na caixa:
+box-shadow: 4px 3px 7px black;
+a ordem é deslocamento horizontal(quanto anda pra direita, vertical(quanto vai para baixo), embaçamento(quanto
+a sombra vai se espalhar) e por ultimo é a cor.
+
+para aredondamento de borda é só usar a tag 
+border-radius: 50%;(para deixar uma bola)
+valor pode ser testado no inspecionar, e pode se usar em px tbm
+
+site para se planejar na criação de site mockflow
+
+No CSS existe uma variavel chamada root, que serve como configuração global pode ser usado mt bem para
+guardar a sua paleta de cores, fazer a seguinte tag,  e depois ctrl+espaço e rolar ate o fim.
+:root{
+    --cor01:  #c5ebd6;
+    --cor02:  #83e1ad;
+    --cor03:  #3ddc84;
+    --cor04:  #2fa866;
+    --cor04:  #1a5c37;
+    --cor05:  #063d1e;
+}
+detalhe legal para configurações globais no css, utilizasse * por exemplo
+* {
+    margin: 0px;
+    padding: 0px;
+}(para tirar toda margem e padding da pagina.
+
+dica mais do que linda para responsividade configurar o tamanho max e minimo do main dentro do style ex:
+main {
+            background-color: white;
+            padding: 5px;
+            border-radius: 10px;
+            min-width: 280px; (largura minima)
+            max-width: 800px; (largura maxima)
+            margin: auto; (margin auto para o conteudo se centralizar sozinho)
+        }
+detalhe legal, para configurar as listas com 2 colunas, colocar dentro do estilo a seguinte tag
+ul {
+    list-style-position: inside; (aq pra colocar dentro do aside ou algo do tipo)
+    columns: 2;
+    list-style-type: " \2714\00a0\00a0";(para mudar para o sinal de check 00a0 é espaço
+}

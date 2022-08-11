@@ -1,0 +1,161 @@
+Capitulo 3 Aula 1 
+
+A linguaguem html é focada em conteudo(texto, imagem, video, tabelas.)
+Toda declaração tem que ter ponto e virgula no final.
+
+Capitulo 4 Aula 2
+
+h1= titulo, hr= linha horizontal, p= paragrafo.
+
+Capitulo 5 
+
+br = quebra de linha no texto.
+&lt; = menor que, &gt; = maior que.
+para adicionar emojis a tag é &#x1"emojipedia code"; (finalizar com ponto e virgula)
+codigo para colocar comentarios é <!--
+
+Capitulo 6
+
+Formato de imagens JPEG Alta compactação e menor qualidade
+PNG = Compactação media + transparencia e qualidade maior
+
+Colocar imagens = img, o alt é escrita alternativa, para procurar apertar ctrl+espaço.
+
+site legal para icones favicon, iconarchive ou favicon.io 
+
+tag para colocar favicon = Link:favicon + (ctrl+espaço)
+
+Capitulo 7
+
+tag lorem = gerador de blablabla.
+h1= titulos e vai ate o nivel 6. 
+
+TAG add para endereço
+
+Capitulo 8
+
+A tag em negrito é B, porem é não semantica, para colocar em destaque deve-se usar a tag STRONG.
+Jeito de facilitar colocar tags em textos ja prontos = ctrl+shift+p + wrap with abreviation(ou Envolver com abrevição)
+
+tag ins = sublinhado e del=riscado
+tag sup = sobrescrito; sub = subscrito
+mark = marca texto 
+
+tag= code para monoespaçar e exibir melhor codigo.
+tag= pre para exibir no site com a mesma formatação do codigo html.
+Selecionar o texto e apertar tab para afastar o texto para direita e shift+tab para afastar para esquerda.
+
+Usar a tag= Q no lugar das aspas!
+
+Tag para Citações completas = Blockquote+cite(URL)
+Tag para Abreviações no codigo =  abbr ex: <abbr title="Hyper Text Markup Language">HTML</abbr>
+Dica: Envelopando fica mais facil! 
+Tag bonus de inverter texto = BDO+R (TAG BOSTA!)
+
+Capitulo 9
+TAG = ol(organized list)
+tag LI = itens da lista (detalhe o /li é opcional a partir do HTML5)
+Dentro da tag ol, podemos colocar style para mudar o tipo da lista, sendo letras maiusculas ou não
+e o I representa numeros romanos.
+
+TAG = UL (Unorganized list)
+mesmo esquema da tag de lista ordenada.
+se usa a tag tipe=(lembrar do igual) para mudar o style da OL E UL, tem 3 opções: Disc, Circle e Square.
+
+TAG= start (para mudar onde começa a Lista, detalhe que é um padrão numerico, só aceita indicação via numeros)
+
+Lista de definição = DL, dentro dela tem 2 tags, que são DT= Termo de definição e depois um DD= descrição da definição.
+
+Capitulo 10
+TAG "a" para colocar link no site, lembrar de colocar o target="_blank" (significa trajeto, blank janela em branco, para abrir em uma nova guia), 
+e rel="External"(avisando que a pagina é externa para o google) tem q ter
+Para avisar que esta abringo no mesmo site, utiliza o target="_self"
+
+No caso de a pagina ser no seu proprio site ela tem q estar na mesma pagina. usat o rel="next"/"prev"(indicando a proxima pagina e a anterior)
+rel="nofollow"(dizer que vc nao esta de acordo com o conteudo da pagina patrocinada)
+
+Quando a pagina esta em uma pasta anterior a que vc esta usando deve se usar a tag dentro do href"../"(signifca pasta anterior)
+ex:  <a href="../index.html">primeira pagina</a>
+
+Para download de pdf ou zip ele pediu para usar a tag A  da seguinte forma
+<a href="livro/10 - Ligações em toda parte.rar" download="meu livro.zip"  type="aplication/zip">Livro compactado</a>
+no entanto percebi que se colocada só a tag dowload ja funciona EXEMPLO ( <a href="livro/10 - Ligações em toda parte.rar" download="meu livro">Livro compactado</a>)
+aparentemente a tag download serve para dizer q é pra baixar e nomear.
+
+Capitulo 11
+
+tag source media type, para imagens flexiveis detalhe importante colocar em ordem decrescente(maiores em baixo)  no codigo
+Tanto o  tag source como o img, tem q estar obrigatoriamente dentro do tag picture!
+ex de tag source media type no codigo = (detale importante lembrar de colocar px no tamanho e no srcset tem que digitar o caminho
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <source media="(max-width: 2000px)" srcset="imagens/foto-g.png" type="image/png">
+        <img src="IMAGENS/foto-gg.png" alt="Imagem Flexível">
+
+OBS: 	IMPORTANTE LEMBRAR DE COLOCAR O NOME DA FOTO COM O .PNG NO FINAL
+	LEMBRAR DE COLOCAR O PNG NO TYPE DA IMAGEM
+	E LEMBRAR SEMPRE DE COLOCAR O PX NOS TAMANHOS
+
+Tag audio= audio , tem alguns adicionais
+preload="auto" so considera qnd carregar o audio todo.
+preload= "metadata" vai carregar nome e informações simples.
+preload= "none" não carrega nada só quando aperta nos controles. 
+parametros tem autoplay, tem controls(importante), e tem o loop pra ficar recomeçando.
+lembrar de botar o tipo do arquivo ex:
+	<source src="midia/pentakill.mp3" type="audio/mpeg">
+        	<source src="midia/pentakill.mp3" type="audio/ogg">
+        	<source src="midia/pentakill.mp3" type="audio/wav">
+3 principais tipos de audio MP3 / WAV / OGG
+Observação evitar usar o arquivo wave pois são muito pesados! 
+
+tag video= video  tem alguns adicionais
+lembrar de colocar controls e colocar pelo menos os 4 principais tipo de arquivo de video que são(mp4/m4v, ogv e webm)
+dentro da tag video colocar width para controlar o tamanho.
+lembar de colocar varios videos com a tag source src, e sempre colocando o tipo do video na tag type
+temos a tag postar dentro da tag video para colocar a tumb do video.
+ex de codigo:
+<video width="300" poster="imagens/platao.jpg" controls >
+        <source src="midia/meuvideom4v.m4v" type="video/mp4">
+        <source src="midia/meuvideomp4.mp4" type="video/mp4">
+        <source src="midia/meuvideoogvv.ogv" type="video/ogv">
+        <source src="midia/meuvideoweb.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com a reprodução de vídeos.</p>
+    </video>
+
+Para colocar videos do youtube, é só clicar em incorporar e colar o codigo gerado no html5
+animetion reel, vimeo ou youtube 
+
+Capitulo 12
+
+Css inline, codigos css na linha do html, usando apenas pontualmente. 
+Algumas dicas de tags css: 
+abre o style inicialmente depois, text-align: justify(para deixar o testo justificado), 
+color: mediumblue(mudar cor do texto dentro da tag em que foi colocado
+font-size: 1.5em(tamanho da fonte em relaação ao tamanhao padrao.
+style="background-color:lightblue(mudar cor do fundo, deve ser colocado dentro da tag Body)
+
+Para css locais, é só abrir uma tag style dentro da tag head, abrir conchetes e fazer alterações tanto para a 
+pagina completa como para tags especificas. ex: 
+body { 
+           background-color: lightblue;
+           font-family: Arial, Helvetica, sans-serif;
+           font-size: 20px;
+        }(vai aplicar as mudanças em tudo que tiver dentro do body.)
+h1{
+            color: darkblue;
+            background-color: aquamarine;
+        }(vai mudar todos os h1, lembrando sempre que tem q ser dentro da tag head)
+
+Para css externo, vc deve criar uma pagina.css e na sua pagina principal, criar um link ss para a pagina
+OBSERVAÇÃO IMPORTANTE todas as paginas devem ter o link 
+ex
+<link rel="stylesheet" href="style.css">
+
+interessante que vc colocar mais de um link para css e vc pode criar um style local tbm
+OBS IMPORTANTE o codigo style inline dentro da linha do codigo é o que prevalece. 
+DICA
+CSS externo = use sempre que puder
+CSS interno = usa para pequenas configurações 
+CSS inline = procure evitar
+
+
