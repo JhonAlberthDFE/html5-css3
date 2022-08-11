@@ -15,3 +15,21 @@ background-repeat: no-repeat; (para não repetir a imagem aparecer só uma)
 para posicionamento devemos usar a 
 background-position: left top;(primeiro o lado q vc quer q comece e depois a parte da imagem)
 vc vai ter: left righ top bottom ou center 
+
+background-attachment: fixed;(junto com o cover para ficar certinho atras do conteudo)
+
+shorthando ou atalho de background tem uma ordem
+            color > image > position > repeat >  attachment
+
+Exempliicando saiu disso: 
+
+       background-color: black;
+       background-image: url(imagens/wallpaper003.jpg);
+       background-position: center center;
+       background-repeat: no-repeat;
+       background-attachment: fixed;
+
+para isso:
+
+background: black url(imagens/wallpaper002.jpg) center center no-repeat cover fixed;
+ background-size: cover; (size é o unico que não entra no atalho)
