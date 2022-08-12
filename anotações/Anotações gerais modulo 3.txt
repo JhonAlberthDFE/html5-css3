@@ -33,3 +33,7 @@ para isso:
 
 background: black url(imagens/wallpaper002.jpg) center center no-repeat cover fixed;
  background-size: cover; (size é o unico que não entra no atalho)
+
+text-transform para transformar o texto ex:
+text-transform: uppercase; (tudo maiusculo)
+font-variant: small-caps; (bem mais legal)
