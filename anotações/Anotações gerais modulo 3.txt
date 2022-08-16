@@ -80,10 +80,33 @@ vertical-align: middle;(para alinhar no meio, para alinhar em cima usa top, e em
 
 Anatomia para tabelas grandes:
 TABLE
-	THEAD
+	CAPTION (legenda)
+	THEAD (cabeça)
 		TR, TD , TH
 	BODY
 		TR, TD , TH
 	FOOT
 		TR, TD , TH
+
+Sempre que for dado é usado TD, sempre que for titulo é TH
+lembrar sempre de colocar no th o scopo, se o conteudo tiver na coluna colocar scope="col" e se tiver 
+na linha colocar scope="row", para o google identiicar. 
+
+para colocar efeito zebrado utilizasse a pseudoclass nth-child(even(significa par) ou odd(significa impar)
+ex:
+tbody > tr:nth-child(even) {(todas as casas pares vao ficar cinza claro)
+            background-color: lightgray;
+        }
+
+para grudar o cabeçalho qnd a colunar for mt grande:
+primeiramente deixa a posição da tabela relativa:
+table {
+            position: relative;
+        }
+depois o comando para grudar na parte de cima
+thead > tr >th { (locais q vc quer grudar)
+            position: sticky;(colar)
+            top: -1px;(local onde colar)
+            background-color: gray;(se não fizer o background color ele não vai.)
+        }
 
