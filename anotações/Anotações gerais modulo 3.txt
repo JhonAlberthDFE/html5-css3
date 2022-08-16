@@ -37,3 +37,43 @@ background: black url(imagens/wallpaper002.jpg) center center no-repeat cover fi
 text-transform para transformar o texto ex:
 text-transform: uppercase; (tudo maiusculo)
 font-variant: small-caps; (bem mais legal)
+
+Capitulo 21
+
+hierarquia de tabelas simples no html:
+TABLE = Tabela
+TABLE HEADER = Cabeçalho de tabela
+TABLE ROW = Linha de Tabela
+TABLE DATA = Dados de tabela
+ex:
+<table>
+        <tr>
+            <td>a1</td>
+            <td>b1</td>
+            <td>c1</td>
+        </tr>
+        <tr >
+            <td>a2</td>
+            <td>b2</td>
+            <td>c2</td>
+        </tr>
+
+Obs: importante caso queira colocar linhas para deixar igual o excel é só colocar borda na tag td via estilo.
+ex: 
+<style>
+        table {
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse; (para as linhas ficarem juntas, e separate para ficar separadas)
+        }
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+    </style>
+
+Se não colocar os elementos na hierarquia certa eles vao aparecer antes ou depois da tabela.
+
+para alinhar horizontalmente só usar o text-align: center; para alinhar de forma vertical se usa uma nova tag a  vertical
+align, ex: 
+vertical-align: middle;(para alinhar no meio, para alinhar em cima usa top, e embaixo usa o bottom)
