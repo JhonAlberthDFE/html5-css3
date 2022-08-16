@@ -77,3 +77,13 @@ Se não colocar os elementos na hierarquia certa eles vao aparecer antes ou depo
 para alinhar horizontalmente só usar o text-align: center; para alinhar de forma vertical se usa uma nova tag a  vertical
 align, ex: 
 vertical-align: middle;(para alinhar no meio, para alinhar em cima usa top, e embaixo usa o bottom)
+
+Anatomia para tabelas grandes:
+TABLE
+	THEAD
+		TR, TD , TH
+	BODY
+		TR, TD , TH
+	FOOT
+		TR, TD , TH
+
