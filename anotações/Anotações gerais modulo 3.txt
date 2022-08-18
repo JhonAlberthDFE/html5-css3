@@ -121,3 +121,9 @@ para personalizar as colunas da tabela utilizasse o colgroup ex:
             <col class="cgrupo" span="2">(essa classe vai configurar 2 tabelas seguidas por causa do span)
             <col class="amarelo">(Voce pode colocar a mesma classe em mais de uma e deixa igual)
         </colgroup>
+
+Para a tabela ficar responsiva o macete é envelopar ela como uma div, colocar uma classe por ex container
+nela e depois usar a seguinte tag de stylo:
+div.container {
+            overflow-x: auto;
+        }(vai rolar só a tabela)
