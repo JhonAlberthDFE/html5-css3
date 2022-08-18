@@ -110,3 +110,7 @@ thead > tr >th { (locais q vc quer grudar)
             background-color: gray;(se não fizer o background color ele não vai.)
         }
 
+
+para expandir a coluna utilizasse a seguinte tag: 
+<td colspan="2">B</td>(para expandir para duas colunas)
+<td rowspan="3">D</td>(para expandir as linhas)
