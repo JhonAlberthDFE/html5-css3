@@ -2,3 +2,10 @@ Capitulo 22
 
 significado Iframe inline frame(quadros em linhas)
 por padrão o iframe tem tamanho padrão de 300px por 150px de altura
+
+Dica legal colocar um name no iframe, e vc pode usar o target para abrir oq quiser nela.
+
+ao inves de usar o src no IFRAME vc pode usar o srcdoc para colocar um html dentro por ex: 
+srcdoc="<h1>Escolha uma das opções acima<h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsa facere inventore est asperiores totam earum sit facilis nam, voluptates veniam accusamus, sequi libero iusto excepturi rem nobis minus magni!</p><img src='imagens/cursoemvideo-logo.png' alt='Logo curso em video'>"
+
+detalhes para colocar IMAGEM no IFRAME deve se colocar aspas simples
