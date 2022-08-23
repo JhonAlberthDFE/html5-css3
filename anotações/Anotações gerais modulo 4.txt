@@ -17,3 +17,10 @@ Capitulo 23
 lembrar de qnd começar o projeto colocar um background color no body independente de qlq coisa
 zerar o padding e a margin no começo é interessante tbm
 a abreviacao da tag background geral é usada mas se pode usar separado tbm.
+
+Capitulo 24
+
+imput aparentemente é a tag mais importante para se trabalhar com formularios
+o nome dentro do imput é mais util para HTML E PHP e o id mais util para JAVASCRIPT
+
+OBS IMPORTANTE: sempre usar o label, para ligar o nome a caixa do input.
