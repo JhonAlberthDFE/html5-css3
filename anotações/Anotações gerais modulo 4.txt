@@ -11,3 +11,9 @@ srcdoc="<h1>Escolha uma das opções acima<h1><p>Lorem ipsum dolor sit amet cons
 detalhes para colocar IMAGEM no IFRAME deve se colocar aspas simples
 
 para se centralizar um IFRAME deve se dar o display block nele e depois margin auto
+
+Capitulo 23
+
+lembrar de qnd começar o projeto colocar um background color no body independente de qlq coisa
+zerar o padding e a margin no começo é interessante tbm
+a abreviacao da tag background geral é usada mas se pode usar separado tbm.
