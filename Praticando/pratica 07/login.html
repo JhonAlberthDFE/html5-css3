@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesse</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            background-color: rgba(33, 255, 255, 0.623);
+        }
+            main{
+            background-color: white;
+            height: 100vh;
+            width: 500px;
+            margin: auto;
+        }
+        div{
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            height: 300px;
+            width: 500px;
+            background-color: rgba(211, 211, 211, 0.178);
+        }
+        form {
+            font-size: 1.5em;
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+        }
+        p {
+            padding: 5px;
+            text-align: center;
+        }
+        input {
+            width: 300px;
+            height: 25px;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.501);
+            padding: 5px;
+            text-align: center;
+        }
+        #iniciar{
+            background-color: rgba(143, 208, 230, 0.634);
+            font-weight: bolder;
+            font-size: 0.7em;
+            font-variant: small-caps;
+            padding: 5px;
+            height: 30px;
+            margin: 5px;
+            margin: auto;
+            width: 315px;
+        }
+        #iniciar:hover{
+            background-color: rgb(79, 173, 255) ;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(143, 208, 230);
+        }
+        a:hover {
+            color: rgb(79, 173, 255);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>  
+            <form action="Login.php" method="post" autocomplete="on">
+                <p>
+                    <label for="iusu">Login</label> <br>
+                    <input type="text" name="usu" id="isu" required max="30" autocomplete="username" placeholder="Usuário ou E-mail:">
+                </p>
+                <p>
+                    <label for="isenha">Senha:</label><br>
+                    <input type="password" name="senha" id="isenha" required minlength="6" maxlength="20" placeholder="******">
+                </p>
+                <p><input id="iniciar" type="submit" value="Iniciar Sessão"></p>
+            </form>
+            <p>Esqueceu sua senha? <a href="#">clique aqui</a></p>
+        </div>
+    </main>
+</body>
+</html>
