@@ -24,3 +24,23 @@ imput aparentemente é a tag mais importante para se trabalhar com formularios
 o nome dentro do imput é mais util para HTML E PHP e o id mais util para JAVASCRIPT
 
 OBS IMPORTANTE: sempre usar o label, para ligar o nome a caixa do input.
+
+Tags importantes, form get é para texto, casa haja senha sempre usar o post
+dentro do input tem a tag required que fala q o preenchimento para enviar é obrigatorio
+depois do required vc pode colocar por exemplo para ter no minimo 5 letras ex: 
+<p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="30" size="11" placeholder="Nome do usuário" autocomplete="username">
+        </p>
+(observe q tem q ser colocado o min ou max depois do required, depois do required vc tbm pode colocar o size que é o tamanho q  a caixa vai aparecer, temos tbm o placeholder o que vai aparecer enquanto não digitar nada e o autocomplete para vc dizer oq é a caixa na hora de auto completar.)
+
+
+
+
+
+
+
+
+
+
+
