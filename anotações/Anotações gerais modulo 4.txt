@@ -58,6 +58,14 @@ Para agrupar os campos dos formularios usar a tag fieldset e colocar uma legenda
         </p>
     </form>
 
+OBS: na criação de botoes de radio tipo input radio, para marcar um ou outro tem q ter o mesmo nome, o id deve ser diferente, porem o nome tem q ser o mesmo, ex:
+<form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M" checked> <label for="isxmas">Masculino</label> <br>
+            <input type="radio" name="sexo" id="isxfem" value="F"> <label for="isxfem">Feminino</label>
+        </fieldset>
+</form>
 
 
 
