@@ -34,6 +34,30 @@ depois do required vc pode colocar por exemplo para ter no minimo 5 letras ex:
         </p>
 (observe q tem q ser colocado o min ou max depois do required, depois do required vc tbm pode colocar o size que é o tamanho q  a caixa vai aparecer, temos tbm o placeholder o que vai aparecer enquanto não digitar nada e o autocomplete para vc dizer oq é a caixa na hora de auto completar.)
 
+Para agrupar os campos dos formularios usar a tag fieldset e colocar uma legenda fica bem legal. EX:
+<form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\d[0-9]{4,5}-[0-9]{4}$" required>
+            </p>
+            <!-- Estudar mais sobre RegEx-->
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
 
 
 
