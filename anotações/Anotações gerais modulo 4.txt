@@ -67,6 +67,7 @@ OBS: na criação de botoes de radio tipo input radio, para marcar um ou outro t
         </fieldset>
 </form>
 
+Para envio de fotos usar o input file, e o metodo post sempre
 
 
 
